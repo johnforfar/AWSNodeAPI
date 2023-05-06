@@ -12,6 +12,11 @@ app.put('/addUser', (req, res) => {
     res.send(myUsers);
 })
 
+app.delete('/deleteUser', (req, res) => {
+    myUsers.splice(req.query.start, req.query.deleteCount);
+    res.send(myUsers);
+})
+
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 })
