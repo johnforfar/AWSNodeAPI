@@ -17,6 +17,11 @@ app.delete('/deleteUser', (req, res) => {
     res.send(myUsers);
 })
 
+app.post('/updateUser', (req, res) => {
+    myUsers[req.query.index] = req.query.name;
+    res.send(myUsers);
+})
+
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 })
