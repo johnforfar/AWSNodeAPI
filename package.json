@@ -1,0 +1,23 @@
+{
+  "name": "awsnodeapi",
+  "version": "0.69.420",
+  "description": "node.js restful api",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnforfar/AWSNodeAPI.git"
+  },
+  "author": "John Forfar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnforfar/AWSNodeAPI/issues"
+  },
+  "homepage": "https://github.com/johnforfar/AWSNodeAPI#readme"
+}

@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-const port = 3002;
+const port = 8080;
 var myUsers = ['Tom', 'Nick', 'Harry'];
 
 app.get('/listUsers', (req, res) => {
