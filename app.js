@@ -3,6 +3,19 @@ var app = express();
 const port = 8080;
 var myUsers = ['Tom', 'Nick', 'Harry'];
 
+app.get("/", (req, res) => {
+    res.write("Welcome to the AWS Node API!");
+    res.write("############################");
+    res.write("GET /listUsers");
+    res.write("PUT /addUser?name=John");
+    res.write("DELETE /deleteUser?start=0&deleteCount=1");
+    res.write("POST /updateUser?index=0&name=John");
+    res.write("############################");
+    res.write("Built with Node.js and Express.js, deployed with AWS CodePipeline and AWS Elastic Beanstalk.");
+    res.write("############################");
+    res.write("Check out johnforfar.com for more portfolio projects.");
+})
+
 app.get('/listUsers', (req, res) => {
     res.send(myUsers);
 })
