@@ -4,16 +4,21 @@ const port = 8080;
 var myUsers = ['Tom', 'Nick', 'Harry'];
 
 app.get("/", (req, res) => {
-    res.write("Welcome to the AWS Node API!");
-    res.write("############################");
-    res.write("GET /listUsers");
-    res.write("PUT /addUser?name=John");
-    res.write("DELETE /deleteUser?start=0&deleteCount=1");
-    res.write("POST /updateUser?index=0&name=John");
-    res.write("############################");
-    res.write("Built with Node.js and Express.js, deployed with AWS CodePipeline and AWS Elastic Beanstalk.");
-    res.write("############################");
-    res.write("Check out johnforfar.com for more portfolio projects.");
+    res.write("########################################################\n");
+    res.write("Welcome to the AWS Node API!\n");
+    res.write("########################################################\n");
+    res.write("The following endpoints have been configured:\n");
+    res.write("GET /listUsers\n");
+    res.write("PUT /addUser?name=John\n");
+    res.write("DELETE /deleteUser?start=0&deleteCount=1\n");
+    res.write("POST /updateUser?index=0&name=John\n");
+    res.write("########################################################\n");
+    res.write("Built with Node.js and Express.js\n")
+    res.write("Deployed with AWS CodePipeline and AWS Elastic Beanstalk.\n");
+    res.write("########################################################\n");
+    res.write("Check out johnforfar.com for more portfolio projects.\n");
+    res.write("########################################################\n");
+    res.end()
 })
 
 app.get('/listUsers', (req, res) => {
